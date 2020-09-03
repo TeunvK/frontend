@@ -58,7 +58,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** Zwarte/Rode piste
 
-**Je focus:** Beide
+**Je focus:** Responsive & Surface
 
 **Je opdracht:** https://www.imdb.com/
 
