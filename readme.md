@@ -6,9 +6,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. https://css-tricks.com/centering-css-complete-guide/#center-horizontally
+3. https://www.w3schools.com/cssref/css_selectors.asp
 
 
 
@@ -58,14 +58,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** Zwarte/Rode piste
 
-**Je focus:** Responsive & Surface
+**Je focus:** Beide
 
 **Je opdracht:** https://www.imdb.com/
 
 **Screenshot(s):**
 
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
-**Breakdown-schets(en):** 
+**Breakdown-schets(en):** ![alt text](images/IMDB_Analysis.png"IMDB Analyse")
 
-![IMDB Analyse](images/IMDB_Analysis.png)
-
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)

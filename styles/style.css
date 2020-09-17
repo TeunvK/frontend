@@ -1,5 +1,123 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #000000;
+  margin: 0;
+}
+
+
+header {
+  background-color: #121212;
+  height: 56px;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  height: 100%;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+ul:first-child img {
+  height: 2.4rem;
+  vertical-align: middle;
+}
+
+.navbar>li:nth-child(3) {
+  flex-grow: 4;
+}
+
+.navbar>li:nth-child(4),
+.navbar>li:nth-child(5) {
+  display: none;
+}
+
+form.searchbar {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  visibility: hidden;
+}
+
+form.searchbar input {
+  height: 2rem;
+  visibility: hidden;
+  width: 100%;
+  padding-left: 0.5rem;
+  float: left;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+form.searchbar button {
+  width: 48px;
+  background: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  form.searchbar input {
+    visibility: visible;
+  }
+
+  form.searchbar {
+    visibility: visible;
+  }
+
+  form.searchbar button {
+    color: gray;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .navbar>li:nth-child(4),
+  .navbar>li:nth-child(5) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar>li:nth-child(2) {
+    order: -1;
+  }
+}
+
+
+
+
+
+
 
