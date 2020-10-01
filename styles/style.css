@@ -8,6 +8,7 @@
 body {
   background-color: #000000;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -16,6 +17,8 @@ header {
   height: 56px;
   width: 100%;
   top: 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 nav {
@@ -29,6 +32,11 @@ ul {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+ul.navbar{
+    width: 100%;
+    margin: auto;
 }
 
 .navbar li {
@@ -49,6 +57,9 @@ ul:first-child img {
 .navbar>li:nth-child(5) {
   display: none;
 }
+
+
+/*Searchbar*/
 
 form.searchbar {
   border-radius: 5px;
@@ -83,6 +94,15 @@ form.searchbar button {
   visibility: visible;
 }
 
+/*Hamburger menu*/
+
+.navbar a.hamburger {
+  background: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: #919191;
+  font-size: 18px;
+}
+
 
 
 @media screen and (min-width: 600px) {
@@ -107,6 +127,9 @@ form.searchbar button {
   .navbar>li:nth-child(5) {
     display: block;
   }
+  ul.navbar{
+    max-width: 1024px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -116,8 +139,11 @@ form.searchbar button {
 }
 
 
-
-
+@media screen and (min-width: 1280px) {
+  ul.navbar{
+    max-width: 1280px;
+  }
+}
 
 
 
