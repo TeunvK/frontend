@@ -68,4 +68,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/IMDB_Analysis.png"IMDB Analyse")
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/IMDB_Analysis.png)
