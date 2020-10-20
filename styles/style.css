@@ -34,28 +34,46 @@ ul {
   align-items: center;
 }
 
-ul.navbar{
-    width: 100%;
-    margin: auto;
+ul.navbar {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0.25rem;
 }
 
 .navbar li {
-  flex-grow: 1;
   text-align: center;
+  padding: 0.75rem
 }
 
 ul:first-child img {
-  height: 2.4rem;
+  height: 32px;
   vertical-align: middle;
 }
 
 .navbar>li:nth-child(3) {
-  flex-grow: 4;
+  flex-grow: 1;
 }
 
 .navbar>li:nth-child(4),
-.navbar>li:nth-child(5) {
+.navbar>li:nth-child(6) {
   display: none;
+}
+
+.navbar>li:hover:nth-child(2),
+.navbar>li:hover:nth-child(4),
+.navbar>li:hover:nth-child(6),
+.navbar>li:hover:nth-child(7) {
+  background-color: #232323;
+  padding: 0.8em;
+  border-radius: 5px;;
+}
+
+.menu a{
+  display: none;
+}
+
+.navbar>li:nth-child(7) {
+  white-space: nowrap;  
 }
 
 
@@ -68,11 +86,11 @@ form.searchbar {
   padding: 0;
   align-items: center;
   visibility: hidden;
+  float: right;
 }
 
 form.searchbar input {
   height: 2rem;
-  visibility: hidden;
   width: 100%;
   padding-left: 0.5rem;
   float: left;
@@ -94,28 +112,66 @@ form.searchbar button {
   visibility: visible;
 }
 
-/*Hamburger menu*/
 
-.navbar a.hamburger {
-  background: rgba(0, 0, 0, 0);
-  text-decoration: none;
-  color: #919191;
-  font-size: 18px;
+/*Hamburger menu*/
+.menu {
+  max-width: 18px;
+}
+
+.hamburger {
+  max-width: 18px;
+  position: relative;
+  float: left;
+  margin: 0 6px 0 0
+}
+
+.menu a{
+  float: right;
+}
+
+.hamburger div {
+  width: 18px;
+  height: 2px;
+  background-color: #919191;
+  margin: 3px 0;
 }
 
 
+/*single bar*/
+.singlebar {
+  width: 2px;
+  height: 32px;
+  background-color: #383838;
+  margin: 0px 0.5rem;
+  display: none;
+}
+
 
 @media screen and (min-width: 600px) {
-  form.searchbar input {
-    visibility: visible;
+
+  ul.navbar {
+    padding: 0px 0.75rem;
   }
 
   form.searchbar {
     visibility: visible;
+    float: unset;
+  }
+
+  form.searchbar input {
+    display: flex;
   }
 
   form.searchbar button {
     color: gray;
+  }
+
+  .navbar>li:nth-child(1) {
+    padding: 0.75rem
+  }
+
+  .singlebar{
+    display: flex;
   }
 
 }
@@ -124,11 +180,20 @@ form.searchbar button {
 @media screen and (min-width: 1024px) {
 
   .navbar>li:nth-child(4),
-  .navbar>li:nth-child(5) {
+  .navbar>li:nth-child(6) {
     display: block;
   }
-  ul.navbar{
+
+  ul.navbar {
     max-width: 1024px;
+  }
+
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu a {
+    display: block;
   }
 }
 
@@ -136,14 +201,24 @@ form.searchbar button {
   .navbar>li:nth-child(2) {
     order: -1;
   }
+
+  .hamburger div {
+    background-color: #FFFFFF;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .menu {
+    margin: 10px;
+  }
+
 }
 
 
 @media screen and (min-width: 1280px) {
-  ul.navbar{
+  ul.navbar {
     max-width: 1280px;
   }
 }
-
-
-

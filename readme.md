@@ -9,7 +9,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. https://css-tricks.com/centering-css-complete-guide/#center-horizontally
 3. https://www.w3schools.com/cssref/css_selectors.asp
-
+4. https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).
 
 
 ## Eindgesprek (week 7/8)
@@ -66,6 +66,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
-**Breakdown-schets(en):**
+**Breakdown-schets(en):** ![alt text](images/IMDB_Analysis.png"IMDB Analyse")
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/IMDB_Analysis.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
