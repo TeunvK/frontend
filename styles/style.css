@@ -70,6 +70,7 @@ ul:first-child img {
 
 .menu a{
   display: none;
+  float: right;
 }
 
 .navbar>li:nth-child(7) {
@@ -115,7 +116,7 @@ form.searchbar button {
 
 /*Hamburger menu*/
 .menu {
-  max-width: 18px;
+  max-width: 40px;
 }
 
 .hamburger {
@@ -123,10 +124,6 @@ form.searchbar button {
   position: relative;
   float: left;
   margin: 0 6px 0 0
-}
-
-.menu a{
-  float: right;
 }
 
 .hamburger div {
@@ -220,5 +217,25 @@ form.searchbar button {
 @media screen and (min-width: 1280px) {
   ul.navbar {
     max-width: 1280px;
+  }
+}
+
+
+
+
+/*Main*/
+
+.gridbox1{
+  background-color: tomato;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  max-height: 640px;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px){
+  .gridcontainer {
+    max-width: 1024px;;
   }
 }
