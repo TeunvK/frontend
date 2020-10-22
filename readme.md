@@ -15,11 +15,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+De site ziet er goed uit tot zover,
+feedback kwam er eigenlijk op neer: Zorg voor meer content en maak een 2e pagina.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+Progress van site tijdens eindgesprek
+
+![-progress-](images/progress1_eindgesprek.png)
 
 
 
