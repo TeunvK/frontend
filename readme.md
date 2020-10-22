@@ -10,7 +10,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. https://css-tricks.com/centering-css-complete-guide/#center-horizontally
 3. https://www.w3schools.com/cssref/css_selectors.asp
 4. https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).
-
+5. https://css-tricks.com/snippets/css/complete-guide-grid/
+6. https://www.youtube.com/watch?v=KcdBOoK3Pfw Carousel 
 
 ## Eindgesprek (week 7/8)
 
@@ -68,4 +69,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):** ![alt text](images/IMDB_Analysis.png"IMDB Analyse")
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/IMDB_Analysis.png)
