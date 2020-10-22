@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
 	<title>IMDB</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
 	<header>
 		<nav>
 			<ul class="navbar">
-				<li><img src="images/imdb_logo.png" alt="Logo" ></li>
+				<li><img src="images/imdb_logo.png" alt="Logo"></li>
 				<li class="menu">
 					<div class="hamburger">
 						<div></div>
@@ -43,20 +44,47 @@
 	<main>
 		<div class="gridcontainer">
 			<section class="gridbox1">
+				<section class="gridbox1a">
+					<button class="carousel1_button prev" id="prevBtn"><i class="fas fa-angle-left"></i></button>
+					<button class="carousel1_button next" id="nextBtn"><i class="fas fa-angle-right"></i></button>
+					<div class="backdrops">
+						<img src="images/section1/themandalorian_backdrop.jpg" alt="backdrop" class="backdrop"
+							id="lastClone">
+						<img src="images/section1/monsterhunter_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/maraineys_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/imdbwtw_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/themandalorian_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/monsterhunter_backdrop.jpg" alt="backdrop" class="backdrop"
+							id="firstClone">
+					</div>
+					<div class="covers">
 
+						<img src="images/section1/monsterhunter_cover.jpg" alt="cover" class="cover">
+						<img src="images/section1/maraineys_cover.jpg" alt="cover" class="cover">
+						<img src="images/section1/imdbwtw_cover.jpg" alt="cover" class="cover">
+						<img src="images/section1/themandalorian_cover.jpg" alt="cover" class="cover">
+					</div>
+				</section>
+				<section class="gridbox1b">
+					<h3>Up next</h3>
+				</section>
 			</section>
 			<section class="gridbox2">
-				
+				<a class="grid2a"></a>
+				<a class="grid2b"></a>
+				<a class="grid2c"></a>
 			</section>
 			<section class="gridbox3">
-				
+				<a class="grid3a"></a>
+				<section class="grid3b"></section>
+				<section class="grid3c"></section>
 			</section>
-		</div>	
+		</div>
 	</main>
 	<footer>
 
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
-	
+
 </html>

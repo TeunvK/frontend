@@ -31,15 +31,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-
+Niet veel meer dan vorige voortgang, verder vrijwel hetzelfde feedback.
 
 
 ## Voortgang 1 (week 3)
 
+Ga de goede kant op, misschien nadenken over andere site (IMDb is vrij lastig)
+
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Navbar ging vrij makkelijk en goed,
+Slider in section 1 had ik wat moeite mee (metname het responsive gedeelte ervan)
 
 **Screenshot(s):**
 

@@ -12,6 +12,16 @@ body {
 }
 
 
+
+
+
+/*Nav bar*/
+
+
+
+
+
+
 header {
   background-color: #121212;
   height: 56px;
@@ -45,36 +55,44 @@ ul.navbar {
   padding: 0.75rem
 }
 
+/* IMDb logo*/
+
 ul:first-child img {
   height: 32px;
   vertical-align: middle;
 }
 
+
+/* Search bar*/
 .navbar>li:nth-child(3) {
   flex-grow: 1;
 }
 
+/*IMDb pro en Watchlist*/
 .navbar>li:nth-child(4),
 .navbar>li:nth-child(6) {
   display: none;
 }
 
+/* Menu, IMDbPro, Watchlist en Sign in hover*/
 .navbar>li:hover:nth-child(2),
 .navbar>li:hover:nth-child(4),
 .navbar>li:hover:nth-child(6),
 .navbar>li:hover:nth-child(7) {
   background-color: #232323;
   padding: 0.8em;
-  border-radius: 5px;;
+  border-radius: 5px;
 }
 
-.menu a{
+/* Menu text*/
+.menu a {
   display: none;
   float: right;
 }
 
+/* Sign in (voorkom dat "sign" boven "in" gaat staan)*/
 .navbar>li:nth-child(7) {
-  white-space: nowrap;  
+  white-space: nowrap;
 }
 
 
@@ -114,16 +132,17 @@ form.searchbar button {
 }
 
 
-/*Hamburger menu*/
+/*Hamburger menu container*/
 .menu {
   max-width: 40px;
 }
 
+/*Hamburger icon*/
 .hamburger {
   max-width: 18px;
   position: relative;
   float: left;
-  margin: 0 6px 0 0
+  margin: 0 6px 0 0;
 }
 
 .hamburger div {
@@ -167,13 +186,13 @@ form.searchbar button {
     padding: 0.75rem
   }
 
-  .singlebar{
+  .singlebar {
     display: flex;
   }
 
 }
 
-
+/*Responsiveness*/
 @media screen and (min-width: 1024px) {
 
   .navbar>li:nth-child(4),
@@ -223,19 +242,238 @@ form.searchbar button {
 
 
 
+
 /*Main*/
 
-.gridbox1{
-  background-color: tomato;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  max-height: 640px;
-  height: 100%;
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (min-width: 1024px){
+.gridcontainer {
+  margin-top: 1rem;
+  width: 100%;
+  position: absolute;
+  height: 500px;
+}
+
+/* Section 1*/
+
+/* Section 1*/
+.gridbox1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100% 0;
+  min-height: 57vh;
+}
+
+
+/* Linker gedeelte van eerste section*/
+.gridbox1a {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 57vh;
+  position: relative;
+  margin: 0 8px;
+  justify-content: center;
+}
+
+
+/* Carousel bron: youtube - Dev Ed
+  ook vermeld in bronnenlijst
+*/
+.backdrops {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.backdrops img {
+  max-height: 57vh;
+  display: block;
+  min-width: 101%;
+  width: 100%;
+  object-fit: cover;
+  margin-left: -1px;
+}
+
+/* Cover is WiP*/
+.cover {
+  display: grid;
+  width: 10%;
+  position: absolute;
+  visibility: hidden;
+}
+
+
+.carousel1_button {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 42px;
+  padding: 8px 12px;
+  display: none;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+.carousel1_button:focus {
+  outline: none;
+}
+
+.carousel1_button:hover {
+  color: #F5C518;
+  border: 1px solid white;
+
+}
+
+
+/*Responsiveness*/
+@media screen and (min-height: 664px) and (min-width: 1024px) and (max-width: 1280px) {
+  .carousel1_button {
+    top: 170px;
+  }
+}
+
+@media screen and (min-height: 835px) and (min-width: 1280px) {
+  .carousel1_button {
+    top: 205px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gridbox1a {
+    overflow: hidden;
+  }
+
+  .carousel1_button {
+    display: block;
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .backdrop {
+    height: 100%;
+  }
+}
+
+/* Rechte gedeelte van eerste section */
+.gridbox1b {
+  display: none;
+}
+
+.gridbox1b h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #F5C518;
+  margin-top: 8px;
+}
+
+
+/* Section 2 */
+
+/* container section 2*/
+.gridbox2 {
+  width: 100%;
+  display: grid;
+  background-color: grey;
+  min-height: 35vh;
+  padding: 1.5rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.gridbox2 .grid2a {
+
+  background-color: blue;
+}
+
+.gridbox2 .grid2b {
+
+  background-color: purple;
+}
+
+.gridbox2 .grid2c {
+
+  background-color: orangered;
+}
+
+
+
+/* Section 3 */
+
+
+/* container section 3*/
+.gridbox3 {
+  width: 100%;
+  display: grid;
+  background-color: grey;
+  min-height: 96.9vh;
+  grid-template-rows: 1fr 3.3fr 5.6fr;
+}
+
+.gridbox3 .grid3a {
+  background-color: hotpink;
+  padding: 1.5rem 0;
+}
+
+.gridbox3 .grid3b {
+  background-color: palegoldenrod;
+  padding: 1.5rem 0;
+}
+
+.gridbox3 .grid3c {
+  background-color: aquamarine;
+  padding: 1.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
   .gridcontainer {
-    max-width: 1024px;;
+    max-width: 1024px;
+  }
+
+  .gridbox1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .gridbox1b {
+    display: block;
+  }
+
+  /* .gridbox2 {} */
+
+}
+
+@media screen and (min-width: 1280px) {
+  .gridcontainer {
+    max-width: 1280px;
   }
 }
