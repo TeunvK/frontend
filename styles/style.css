@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  min-height: 67vh;
+}
+
 body {
   background-color: #000000;
   margin: 0;
@@ -255,10 +259,8 @@ main {
 }
 
 .gridcontainer {
-  margin-top: 1rem;
+  margin-top: 18px;
   width: 100%;
-  position: absolute;
-  height: 500px;
 }
 
 /* Section 1*/
@@ -266,9 +268,11 @@ main {
 /* Section 1*/
 .gridbox1 {
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 100% 0;
-  min-height: 57vh;
+  position: relative;
+  padding-bottom: 120px;
 }
 
 
@@ -276,7 +280,7 @@ main {
 .gridbox1a {
   overflow-x: scroll;
   overflow-y: hidden;
-  max-height: 57vh;
+  height: auto;
   position: relative;
   margin: 0 8px;
   justify-content: center;
@@ -300,15 +304,6 @@ main {
   object-fit: cover;
   margin-left: -1px;
 }
-
-/* Cover is WiP*/
-.cover {
-  display: grid;
-  width: 10%;
-  position: absolute;
-  visibility: hidden;
-}
-
 
 .carousel1_button {
   position: absolute;
@@ -342,6 +337,14 @@ main {
 
 }
 
+.trailersmobile {
+  color: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  padding: 16px 16px 0;
+
+
+}
 
 /*Responsiveness*/
 @media screen and (min-height: 664px) and (min-width: 1024px) and (max-width: 1280px) {
@@ -357,6 +360,10 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+  .gridbox1 {
+    padding-bottom: 0;
+  }
+
   .gridbox1a {
     overflow: hidden;
   }
@@ -365,57 +372,172 @@ main {
     display: block;
 
   }
+
+  .trailersmobile {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
   .backdrop {
     height: 100%;
   }
+
+  .gridcontainer {
+    height: 500px;
+  }
 }
 
 /* Rechte gedeelte van eerste section */
 .gridbox1b {
+  position: relative;
+  max-height: 67vh;
   display: none;
+  grid-template-rows: 1fr 9fr;
 }
 
 .gridbox1b h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: #F5C518;
   margin-top: 8px;
 }
 
+.trailers {
+  color: #ffffff !important;
+}
+
+/* Cover is WiP*/
+.coverContainer {
+  margin-top: 2px;
+  background: rgb(#121212);
+  background: linear-gradient(180deg, rgba(12, 12, 12, 1) 80%, rgba(255, 255, 255, 0) 100%);
+  overflow: hidden;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.covers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  margin-left: 15px !important;
+  max-width: 22%;
+  height: 33.3%;
+  object-fit: cover;
+}
 
 /* Section 2 */
 
+.gridbox2 h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #F5C518;
+
+}
+
 /* container section 2*/
 .gridbox2 {
+  position: relative;
+  top: 0;
   width: 100%;
-  display: grid;
-  background-color: grey;
+  background-color: #121212;
   min-height: 35vh;
-  padding: 1.5rem 0;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.7rem 1rem;
+  overflow: hidden;
+}
+
+.newscontainer {
+  position: relative;
+  display: flex;
+  height: 34vh;
+  overflow: scroll;
+}
+
+.newscontainer a {
+  flex-wrap: wrap;
+  min-width: 90%;
+  margin: 0 2% 0 0;
+  color: #ffffff;
+}
+
+.newscontainer img {
+  width: 100%;
+}
+
+.news {
+  padding-bottom: 8px;
+}
+
+.carousel2_button {
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 42px;
+  padding: 8px 12px;
+  display: none;
+
+}
+
+#prevBtn2 {
+  left: 0;
+  display: none;
+}
+
+#nextBtn2 {
+  right: 0;
+}
+
+.carousel2_button:focus {
+  outline: none;
+}
+
+.carousel2_button:hover {
+  color: #F5C518;
+  border: 1px solid white;
+
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .newscontainer a {
+    min-width: 42%;
+  }
 }
 
 
-.gridbox2 .grid2a {
+@media screen and (min-width: 1024px) {
+  .newscontainer {
+    overflow: unset;
+  }
 
-  background-color: blue;
+  .newscontainer a {
+    min-width: 32%;
+  }
+
+  .carousel2_button {
+    display: block;
+  }
 }
 
-.gridbox2 .grid2b {
-
-  background-color: purple;
-}
-
-.gridbox2 .grid2c {
-
-  background-color: orangered;
-}
-
-
+@media screen and (min-width: 1280px) {}
 
 /* Section 3 */
 
@@ -426,7 +548,7 @@ main {
   display: grid;
   background-color: grey;
   min-height: 96.9vh;
-  grid-template-rows: 1fr 3.3fr 5.6fr;
+  grid-template-rows: 1fr 6.1fr 3fr;
 }
 
 .gridbox3 .grid3a {
@@ -449,31 +571,140 @@ main {
 
 
 
+.gridcontainer.trailer {
+  margin: 0;
+}
 
 
 
+.trailersgrid {
+  background-color: #121212;
+  width: 100%;
+  height: 67vh;
+  display: grid;
+
+}
+
+.backbutton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 200;
+  display: inline-block;
+}
+
+.backtxt {
+  color: white;
+  display: inline-block;
+  line-height: 5px;
+  vertical-align: top;
+  font-size: 14px;
+}
 
 
+.trailersgrida {
+  width: 100%;
+}
+
+.trailersgridb {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.trailersgridb img {
+  width: 25%;
+  display: block;
+  position: relative;
+  display: none;
+  margin-right: 8px;
+}
+
+.trailersgridb p {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.trailerdesc {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 4px;
+
+}
+
+
+.trailerdesc p {
+  color: #656365;
+
+}
+
+.trailerdesc hr {
+  margin-left: 8px;
+}
+
+.collapse {
+  position: absolute;
+  height: 18%;
+  overflow: hidden;
+  background: none;
+  color: #ffffff;
+  border: none;
+  text-align: left;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.collapseopen {
+  height: 25%;
+}
 
 @media screen and (min-width: 1024px) {
   .gridcontainer {
     max-width: 1024px;
   }
 
+
   .gridbox1 {
     grid-template-columns: 2fr 1fr;
   }
 
   .gridbox1b {
-    display: block;
+    display: grid;
   }
 
   /* .gridbox2 {} */
 
+  .trailersgrid {
+    grid-template-columns: 2fr 1fr;
+    height: 43vh;
+  }
+
+
+
+  .trailersgridb {
+    display: block;
+  }
+
+  .trailersgridb img {
+    display: inline-block;
+  }
+
+  .gridbox1 {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .gridcontainer {
     max-width: 1280px;
   }
+
+  .trailersgrid {
+    height: 52vh;
+    padding-bottom: 1.5rem;
+  }
+
 }
