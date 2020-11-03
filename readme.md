@@ -22,7 +22,7 @@ feedback kwam er eigenlijk op neer: Zorg voor meer content en maak een 2e pagina
 
 Progress van site tijdens eindgesprek
 
-![-progress-](images/progress1_eindgesprek.png)
+![Progress](images/progress1_eindgesprek.png)
 
 
 
