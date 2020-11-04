@@ -709,7 +709,7 @@ main {
   }
 
   .trailersgridb img {
-    display: inline-block;
+    visibility: hidden;
   }
 
   .gridbox1 {
