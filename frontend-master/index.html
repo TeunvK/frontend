@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+	<title>IMDB</title>
+
+	<link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="navbar">
+				<li><a href="index.html"><img src="images/imdb_logo.png" alt="Logo"></a></li>
+				<li class="menu">
+					<div class="hamburger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<a>Menu</a>
+				</li>
+				<li>
+					<form class="searchbar">
+						<input type="text" placeholder="Search IMDB" name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</li>
+				<li><a>IMDbPro</a></li>
+				<div class="singlebar"></div>
+				<li><a>Watchlist</a></li>
+				<li><a class="signin">Sign In</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="gridcontainer">
+			<section class="gridbox1">
+				<section class="gridbox1a">
+					<button class="carousel1_button prev" id="prevBtn"><i class="fas fa-angle-left"></i></button>
+					<button class="carousel1_button next" id="nextBtn"><i class="fas fa-angle-right"></i></button>
+					<a href="moviepage.html" class="backdrops">
+						<img src="images/section1/themandalorian_backdrop.jpg" alt="backdrop" class="backdrop"
+							id="lastClone">
+						<img src="images/section1/monsterhunter_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/maraineys_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/imdbwtw_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/themandalorian_backdrop.jpg" alt="backdrop" class="backdrop">
+						<img src="images/section1/monsterhunter_backdrop.jpg" alt="backdrop" class="backdrop"
+							id="firstClone">
+					</a>
+				</section>
+				<h3 class="trailersmobile">Browse trailers ></h3>
+				<section class="gridbox1b">
+					<h3>Up next</h3>
+					<div class="coverContainer">
+						<div class="covers">
+							<div class="cover">
+								<img src="images/section1/monsterhunter_cover.jpg" alt="cover" class="coverimg" id="lastClone">
+								<p>'Ma Rainey's Black Bottom'</p>
+							</div>
+							<div class="cover">
+								<img src="images/section1/maraineys_cover.jpg" alt="cover" class="coverimg">
+								<p>The Best TV Shows About Being in Your 30s</p>
+							</div>
+							<div class="cover">
+								<img src="images/section1/imdbwtw_cover.jpg" alt="cover" class="coverimg">
+								<p>Get a New Look at "The Mandalorian" Season 2</p>
+							</div>
+							<div class="cover">
+							<img src="images/section1/themandalorian_cover.jpg" alt="cover" class="coverimg">
+							<p>'Monster Hunter'</p>
+						</div>
+						<div class="cover">
+							<img src="images/section1/monsterhunter_cover.jpg" alt="cover" class="coverimg">
+							<p>'Ma Rainey's Black Bottom'</p>
+						</div>
+						<div class="cover">
+							<img src="images/section1/maraineys_cover.jpg" alt="cover" class="coverimg" id="firstClone">
+							<p>The Best TV Shows About Being in Your 30s</p>
+						</div>
+						<div class="cover">
+							<img src="images/section1/imdbwtw_cover.jpg" alt="cover" class="coverimg">
+							<p>Get a New Look at "The Mandalorian" Season 2</p>
+						</div>
+						<div class="cover">
+							<img src="images/section1/themandalorian_cover.jpg" alt="cover" class="coverimg">
+							<p>'Monster Hunter'</p>
+						</div>
+						</div>
+					</div>
+					<h3 class="trailers">Browse trailers ></h3>
+				</section>
+			</section>
+			<section class="gridbox2">
+				<h2>Featured today</h2>
+				<button class="carousel2_button next" id="nextBtn2"><i class="fas fa-angle-right"></i></button>
+				<button class="carousel2_button prev" id="prevBtn2"><i class="fas fa-angle-left"></i></button>
+				<div class="newscontainer">
+					<a><img src="images/section2/newscalender.jpg" class="news">November 2020 TV and Streaming
+						Calendar</a>
+					<a><img src="images/section2/newshunter.jpg" class="news">See the Exclusive "hunter hunter"
+						Poster</a>
+					<a><img src="images/section2/newsicons.jpg" class="news">High School Icons, Then and Now</a>
+					<a><img src="images/section2/newslgbtq.jpg" class="news">LGBTQ+ Power Couples of Hollywood</a>
+					<a><img src="images/section2/newssascha.jpg" class="news">The Rise of Sacha Baron Cohen</a>
+					<a><img src="images/section2/newstom.jpg" class="news">Latest Stills: Tom Holland in 'Uncharted' and
+						More</a>
+				</div>
+			</section>
+			<section class="gridbox3">
+				<a class="grid3a"></a>
+				<section class="grid3b"></section>
+				<section class="grid3c"></section>
+			</section>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

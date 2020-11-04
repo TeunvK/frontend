@@ -1,0 +1,733 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  min-height: 67vh;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+/*Nav bar*/
+
+
+
+
+
+
+header {
+  background-color: #121212;
+  height: 56px;
+  width: 100%;
+  top: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav {
+  height: 100%;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul.navbar {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0.25rem;
+}
+
+.navbar li {
+  text-align: center;
+  padding: 0.75rem
+}
+
+/* IMDb logo*/
+
+ul:first-child img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+
+/* Search bar*/
+.navbar>li:nth-child(3) {
+  flex-grow: 1;
+}
+
+/*IMDb pro en Watchlist*/
+.navbar>li:nth-child(4),
+.navbar>li:nth-child(6) {
+  display: none;
+}
+
+/* Menu, IMDbPro, Watchlist en Sign in hover*/
+.navbar>li:hover:nth-child(2),
+.navbar>li:hover:nth-child(4),
+.navbar>li:hover:nth-child(6),
+.navbar>li:hover:nth-child(7) {
+  background-color: #232323;
+  padding: 0.8em;
+  border-radius: 5px;
+}
+
+/* Menu text*/
+.menu a {
+  display: none;
+  float: right;
+}
+
+/* Sign in (voorkom dat "sign" boven "in" gaat staan)*/
+.navbar>li:nth-child(7) {
+  white-space: nowrap;
+}
+
+
+/*Searchbar*/
+
+form.searchbar {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  visibility: hidden;
+  float: right;
+}
+
+form.searchbar input {
+  height: 2rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  float: left;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+form.searchbar button {
+  width: 48px;
+  background: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+
+/*Hamburger menu container*/
+.menu {
+  max-width: 40px;
+}
+
+/*Hamburger icon*/
+.hamburger {
+  max-width: 18px;
+  position: relative;
+  float: left;
+  margin: 0 6px 0 0;
+}
+
+.hamburger div {
+  width: 18px;
+  height: 2px;
+  background-color: #919191;
+  margin: 3px 0;
+}
+
+
+/*single bar*/
+.singlebar {
+  width: 2px;
+  height: 32px;
+  background-color: #383838;
+  margin: 0px 0.5rem;
+  display: none;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  ul.navbar {
+    padding: 0px 0.75rem;
+  }
+
+  form.searchbar {
+    visibility: visible;
+    float: unset;
+  }
+
+  form.searchbar input {
+    display: flex;
+  }
+
+  form.searchbar button {
+    color: gray;
+  }
+
+  .navbar>li:nth-child(1) {
+    padding: 0.75rem
+  }
+
+  .singlebar {
+    display: flex;
+  }
+
+}
+
+/*Responsiveness*/
+@media screen and (min-width: 1024px) {
+
+  .navbar>li:nth-child(4),
+  .navbar>li:nth-child(6) {
+    display: block;
+  }
+
+  ul.navbar {
+    max-width: 1024px;
+  }
+
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu a {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar>li:nth-child(2) {
+    order: -1;
+  }
+
+  .hamburger div {
+    background-color: #FFFFFF;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .menu {
+    margin: 10px;
+  }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+  ul.navbar {
+    max-width: 1280px;
+  }
+}
+
+
+
+
+
+/*Main*/
+
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.gridcontainer {
+  margin-top: 18px;
+  width: 100%;
+}
+
+/* Section 1*/
+
+/* Section 1*/
+.gridbox1 {
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 100% 0;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+
+/* Linker gedeelte van eerste section*/
+.gridbox1a {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: auto;
+  position: relative;
+  margin: 0 8px;
+  justify-content: center;
+}
+
+
+/* Carousel bron: youtube - Dev Ed
+  ook vermeld in bronnenlijst
+*/
+.backdrops {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.backdrops img {
+  max-height: 57vh;
+  display: block;
+  min-width: 101%;
+  width: 100%;
+  object-fit: cover;
+  margin-left: -1px;
+}
+
+.carousel1_button {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 42px;
+  padding: 8px 12px;
+  display: none;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+.carousel1_button:focus {
+  outline: none;
+}
+
+.carousel1_button:hover {
+  color: #F5C518;
+  border: 1px solid white;
+
+}
+
+.trailersmobile {
+  color: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  padding: 16px 16px 0;
+
+
+}
+
+/*Responsiveness*/
+@media screen and (min-height: 664px) and (min-width: 1024px) and (max-width: 1280px) {
+  .carousel1_button {
+    top: 170px;
+  }
+}
+
+@media screen and (min-height: 835px) and (min-width: 1280px) {
+  .carousel1_button {
+    top: 205px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gridbox1 {
+    padding-bottom: 0;
+  }
+
+  .gridbox1a {
+    overflow: hidden;
+  }
+
+  .carousel1_button {
+    display: block;
+
+  }
+
+  .trailersmobile {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .backdrop {
+    height: 100%;
+  }
+
+  .gridcontainer {
+    height: 500px;
+  }
+}
+
+/* Rechte gedeelte van eerste section */
+.gridbox1b {
+  position: relative;
+  max-height: 67vh;
+  display: none;
+  grid-template-rows: 1fr 9fr;
+}
+
+.gridbox1b h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #F5C518;
+  margin-top: 8px;
+}
+
+.trailers {
+  color: #ffffff !important;
+}
+
+/* Cover is WiP*/
+.coverContainer {
+  margin-top: 2px;
+  background: rgb(#121212);
+  background: linear-gradient(180deg, rgba(12, 12, 12, 1) 80%, rgba(255, 255, 255, 0) 100%);
+  overflow: hidden;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+}
+
+.covers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  margin-left: 15px !important;
+  max-width: 22%;
+  height: 33.3%;
+  object-fit: cover;
+}
+
+.coverimg{
+  padding-top: 4px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.cover p{
+  position: absolute;
+  color: white;
+  padding-top: 10%;
+  margin-left: 25%;
+}
+
+
+
+
+/* Section 2 */
+
+.gridbox2 h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #F5C518;
+
+}
+
+/* container section 2*/
+.gridbox2 {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: #121212;
+  min-height: 35vh;
+  padding: 0.7rem 1rem;
+  overflow: hidden;
+}
+
+.newscontainer {
+  position: relative;
+  display: flex;
+  height: 34vh;
+  overflow: scroll;
+}
+
+.newscontainer a {
+  flex-wrap: wrap;
+  min-width: 90%;
+  margin: 0 2% 0 0;
+  color: #ffffff;
+}
+
+.newscontainer img {
+  width: 100%;
+}
+
+.news {
+  padding-bottom: 8px;
+}
+
+.carousel2_button {
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 42px;
+  padding: 8px 12px;
+  display: none;
+
+}
+
+#prevBtn2 {
+  left: 0;
+  display: none;
+}
+
+#nextBtn2 {
+  right: 0;
+}
+
+.carousel2_button:focus {
+  outline: none;
+}
+
+.carousel2_button:hover {
+  color: #F5C518;
+  border: 1px solid white;
+
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .newscontainer a {
+    min-width: 42%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .newscontainer {
+    overflow: unset;
+  }
+
+  .newscontainer a {
+    min-width: 32%;
+  }
+
+  .carousel2_button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .coverContainer p{
+    height: 20%;
+}
+
+/* Section 3 */
+
+
+/* container section 3*/
+.gridbox3 {
+  width: 100%;
+  display: grid;
+  background-color: grey;
+  min-height: 96.9vh;
+  grid-template-rows: 1fr 6.1fr 3fr;
+}
+
+.gridbox3 .grid3a {
+  background-color: hotpink;
+  padding: 1.5rem 0;
+}
+
+.gridbox3 .grid3b {
+  background-color: palegoldenrod;
+  padding: 1.5rem 0;
+}
+
+.gridbox3 .grid3c {
+  background-color: aquamarine;
+  padding: 1.5rem 0;
+}
+
+
+
+
+
+
+.gridcontainer.trailer {
+  margin: 0;
+}
+
+
+
+.trailersgrid {
+  background-color: #121212;
+  width: 100%;
+  height: 67vh;
+  display: grid;
+
+}
+
+.backbutton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 200;
+  display: inline-block;
+}
+
+.backtxt {
+  color: white;
+  display: inline-block;
+  line-height: 5px;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+
+.trailersgrida {
+  width: 100%;
+}
+
+.trailersgridb {
+  width: 10%;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.trailersgridb img {
+  width: 25%;
+  display: block;
+  position: relative;
+  display: none;
+  margin-right: 8px;
+}
+
+.trailersgridb p {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.trailerdesc {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 4px;
+
+}
+
+
+.trailerdesc p {
+  color: #656365;
+
+}
+
+.trailerdesc hr {
+  margin-left: 8px;
+}
+
+.collapse {
+  position: absolute;
+  height: 18%;
+  overflow: hidden;
+  background: none;
+  color: #ffffff;
+  border: none;
+  text-align: left;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.collapseopen {
+  height: 25%;
+}
+
+@media screen and (min-width: 1024px) {
+  .gridcontainer {
+    max-width: 1024px;
+  }
+
+
+  .gridbox1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .gridbox1b {
+    display: grid;
+  }
+
+  /* .gridbox2 {} */
+
+  .trailersgrid {
+    grid-template-columns: 2fr 1fr;
+    height: 43vh;
+  }
+
+
+
+  .trailersgridb {
+    display: block;
+  }
+
+  .trailersgridb img {
+    display: inline-block;
+  }
+
+  .gridbox1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gridcontainer {
+    max-width: 1280px;
+    
+  }
+  .trailersgridb {
+    width: 100%;
+  }
+  .trailersgrid {
+    height: 52vh;
+    padding-bottom: 1.5rem;
+  }
+
+}
